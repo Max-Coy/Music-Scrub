@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.waveform-container {
+    position: relative;
+    margin-top: 10px;
+    height: 120px;
+}
+.waveform-canvas,
+.overlay-canvas {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+.waveform-canvas {
+    background-color: #222;
+}
+.overlay-canvas {
+    pointer-events: none;
+}
+
+.minimap-container {
+    position: relative;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.minimap-canvas,
+.minimap-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.minimap-cavnas {
+    background-color: #111;
+}
+
+#app {
+    width: 90%;
+}
+
+#video-player {
+    width: 100%;
+    max-height: 90vh;
+}
+
+video {
+    pointer-events: none;
+}

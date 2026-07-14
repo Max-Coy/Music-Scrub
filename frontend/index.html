@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Scrub</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+    <div id="app">
+        <video id="video-player" tabindex="-1" disablePictureInPicture>
+            <source src="/video" type="video/mp4">
+
+        </video>
+
+        <div class="minimap-container">
+            <canvas id="timeline-minimap-static" class="minimap-canvas"></canvas>
+            <canvas id="timeline-minimap-overlay" class="minimap-overlay"></canvas>
+        </div>
+        <div class="waveform-container">
+            <canvas id="video-waveform-static" class="waveform-canvas"></canvas>
+            <canvas id="video-waveform-overlay" class="overlay-canvas"></canvas>
+        </div>
+
+        <div class="waveform-container">
+            <canvas id="song-waveform-static" class="waveform-canvas"></canvas>
+            <canvas id="song-waveform-overlay" class ="overlay-canvas"></canvas>
+        </div>
+        
+    </div>
+
+    <script type="module" src="/static/app.js"></script>
+</body>
+
+</html>
